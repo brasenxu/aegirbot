@@ -32,8 +32,8 @@ async def pic(ctx):
 
 #Aegir Stardew Comment
 @client.command()
-async def stardew(ctx):
-    await ctx.send(f'https://imgur.com/rBJS8j2'.format(ctx))
+async def aegir(ctx):
+    await ctx.send(f'Stop stop stop. Its actually over.')
 
 
 #When you say aegir the bot does :at:
