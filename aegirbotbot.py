@@ -44,6 +44,13 @@ async def shutup(ctx):
     await ctx.send(f'https://imgur.com/JgfEmNu')
 
 
+#say command
+@commands.command()
+async def say(self, ctx, *, msg):
+    await ctx.message.delete()
+    await ctx.send(msg)
+
+
 #weirdchamp
 @client.command()
 async def weirdchamp(ctx):
