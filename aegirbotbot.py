@@ -35,13 +35,13 @@ async def pic(ctx):
 @client.command()
 async def aegir(ctx):
     await ctx.send(f'Stop stop stop. Its actually over.')
-    await ctx.send(f'https://imgur.com/JgfEmNu')
 
 
 #Aegir Shut up Comment
 @client.command()
 async def shutup(ctx):
     await ctx.send(f'Shut up. Please shut up.')
+    await ctx.send(f'https://imgur.com/JgfEmNu')
 
 
 #weirdchamp
