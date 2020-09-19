@@ -46,7 +46,7 @@ async def shutup(ctx):
 
 #say command
 @client.command()
-async def say(ctx, msg=None):
+async def say(ctx, *, msg):
     await ctx.message.delete()
     await ctx.send(msg)
 
