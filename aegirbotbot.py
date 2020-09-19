@@ -25,15 +25,28 @@ async def pic(ctx):
     pictures = ['https://imgur.com/F2UhyI4',
                 'https://imgur.com/51YfC6m',
                 'https://imgur.com/M79Ic6z',
-                'https://imgur.com/b9ab84N']
+                'https://imgur.com/b9ab84N'
+                'https://imgur.com/m9yolDG']
 
     await ctx.send(f'{random.choice(pictures)}'.format(ctx))
 
 
-#Aegir Stardew Comment
+#Aegir StopStopStop Comment
 @client.command()
 async def aegir(ctx):
     await ctx.send(f'Stop stop stop. Its actually over.')
+
+
+#Aegir Shut up Comment
+@client.command()
+async def shutup(ctx):
+    await ctx.send(f'Shut up. Please shut up.')
+
+
+#weirdchamp
+@client.command()
+async def weirdchamp(ctx):
+    await ctx.send(f'https://imgur.com/qK1PD1T')
 
 
 #When you say aegir the bot does :at:
