@@ -25,7 +25,7 @@ async def pic(ctx):
     pictures = ['https://imgur.com/F2UhyI4',
                 'https://imgur.com/51YfC6m',
                 'https://imgur.com/M79Ic6z',
-                'https://imgur.com/b9ab84N'
+                'https://imgur.com/b9ab84N',
                 'https://imgur.com/m9yolDG']
 
     await ctx.send(f'{random.choice(pictures)}'.format(ctx))
@@ -35,6 +35,7 @@ async def pic(ctx):
 @client.command()
 async def aegir(ctx):
     await ctx.send(f'Stop stop stop. Its actually over.')
+    await ctx.send(f'https://imgur.com/JgfEmNu')
 
 
 #Aegir Shut up Comment
