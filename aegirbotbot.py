@@ -24,9 +24,33 @@ async def ping(ctx):
 async def pic(ctx):
     pictures = ['https://imgur.com/F2UhyI4',
                 'https://imgur.com/51YfC6m',
-                'https://imgur.com/M79Ic6z',
+                'https://imgur.com/Y3cWAFA',
                 'https://imgur.com/b9ab84N',
-                'https://imgur.com/m9yolDG']
+                'https://imgur.com/m9yolDG',
+                'https://imgur.com/s0nv6IX',
+                'https://imgur.com/yD18plG',
+                'https://imgur.com/tXn7zcy',
+                'https://imgur.com/wVuJ48N',
+                'https://imgur.com/weompm7',
+                'https://imgur.com/syvTjFn',
+                'https://imgur.com/mJT8N67',
+                'https://imgur.com/JDwI3nm',
+                'https://imgur.com/IuTbaFo',
+                'https://imgur.com/XI3UYQv',
+                'https://imgur.com/td9PrSW',
+                'https://imgur.com/iCw7FEf',
+                'https://imgur.com/zplmtyR',
+                'https://imgur.com/V1qhyu3',
+                'https://imgur.com/F47qXHj',
+                'https://imgur.com/5GwZILV',
+                'https://imgur.com/V0toia5',
+                'https://imgur.com/95ZNol8',
+                'https://imgur.com/fMeaI8k',
+                'https://imgur.com/UMCyooO',
+                'https://imgur.com/Lmka6IP',
+                'https://imgur.com/jxboPQq',
+                'https://imgur.com/RDCEtV1',
+                'https://imgur.com/QEljUxX']
 
     await ctx.send(f'{random.choice(pictures)}'.format(ctx))
 
