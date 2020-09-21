@@ -21,8 +21,11 @@ async def ping(ctx):
 
 #Pic of Aegir command
 @client.command()
-async def pic(ctx):
-    pictures = ['https://imgur.com/F2UhyI4',
+async def pic(ctx, arg=None):
+
+
+
+    aegirPic = ['https://imgur.com/F2UhyI4',
                 'https://imgur.com/51YfC6m',
                 'https://imgur.com/Y3cWAFA',
                 'https://imgur.com/b9ab84N',
@@ -44,7 +47,7 @@ async def pic(ctx):
                 'https://imgur.com/F47qXHj',
                 'https://imgur.com/5GwZILV',
                 'https://imgur.com/V0toia5',
-                'https://imgur.com/95ZNol8',
+                'https://imgur.com/zGsFyeL',
                 'https://imgur.com/fMeaI8k',
                 'https://imgur.com/UMCyooO',
                 'https://imgur.com/Lmka6IP',
@@ -52,7 +55,11 @@ async def pic(ctx):
                 'https://imgur.com/RDCEtV1',
                 'https://imgur.com/QEljUxX']
 
-    await ctx.send(f'{random.choice(pictures)}'.format(ctx))
+    if not arg or arg == "aegir":
+        await ctx.send(f'{random.choice(aegirPic)}'.format(ctx))
+    else:
+        if arg == "sam":
+            await ctx.send(f'A Sam pic would be here usually...')
 
 
 #Aegir StopStopStop Comment
