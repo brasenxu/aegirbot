@@ -14,16 +14,24 @@ async def on_ready():
 
 
 #Ping command to find latency
-@client.command()
+@client.command(
+    brief="Will tell you the client latency with a nice PONG!",
+    help="Aegirbot really wants you to stop pinging him with you pings and pongs."
+)
 async def ping(ctx):
     await ctx.send(f'Fuck off! {round(client.latency * 1000)}ms')
 
 
 #Pic of Aegir command
-@client.command()
+@client.command(
+    help="Gives you beautiful pictures of the hotties on this server.",
+    brief="Sends back a pretty picture."
+)
 async def pic(ctx, arg=None):
-
-
+    samPic = []
+    brasenPic = []
+    minwooPic = []
+    jeffersonPic = []
 
     aegirPic = ['https://imgur.com/F2UhyI4',
                 'https://imgur.com/51YfC6m',
@@ -63,27 +71,39 @@ async def pic(ctx, arg=None):
 
 
 #Aegir StopStopStop Comment
-@client.command()
+@client.command(
+    help="It's time to stop.",
+    brief="ITS OVER ITS ACTUALLY OVER"
+)
 async def aegir(ctx):
     await ctx.send(f'Stop stop stop. Its actually over.')
 
 
 #Aegir Shut up Comment
-@client.command()
+@client.command(
+    help="Shut the fuck up.",
+    brief="For when Aegir wants you to shut up."
+)
 async def shutup(ctx):
     await ctx.send(f'Shut up. Please shut up.')
     await ctx.send(f'https://imgur.com/JgfEmNu')
 
 
 #say command
-@client.command()
+@client.command(
+    help="Say something, Aegirbot will say too.",
+    brief="Put words in Aegirbot's mouth"
+)
 async def say(ctx, *, msg):
     await ctx.message.delete()
     await ctx.send(msg)
 
 
 #weirdchamp
-@client.command()
+@client.command(
+    help="Hao has to be banned from the #nsfw channel tbh",
+    brief="This is for when Hao gets overly weird."
+)
 async def weirdchamp(ctx):
     await ctx.send(f'https://imgur.com/qK1PD1T')
 
