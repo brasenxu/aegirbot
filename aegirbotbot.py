@@ -79,6 +79,15 @@ async def aegir(ctx):
     await ctx.send(f'Stop stop stop. Its actually over.')
 
 
+#Hao Command
+@client.command(
+    help="Hao Cui Hao Cui",
+    brief="It's Hao"
+)
+async def aegir(ctx):
+    await ctx.send(f'I will take \"Ur mom to the old town road\"')
+
+
 #Aegir Shut up Comment
 @client.command(
     help="Shut the fuck up.",
