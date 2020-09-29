@@ -84,7 +84,7 @@ async def aegir(ctx):
     help="Hao Cui Hao Cui",
     brief="It's Hao"
 )
-async def aegir(ctx):
+async def hao(ctx):
     await ctx.send(f'I will take \"Ur mom to the old town road\"')
 
 
