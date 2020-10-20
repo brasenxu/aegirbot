@@ -1,6 +1,5 @@
 import discord
 import random
-import json
 from discord.ext import commands
 
 
@@ -143,7 +142,4 @@ async def on_message(message):
         await message.add_reaction(':at:699437200672292935')
 '''
 
-with open('token.json') as config_file:
-    data = json.load(config_file)
-
-client.run(data['token'])
+client.run(process.env.BOT_TOKEN)
