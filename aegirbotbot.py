@@ -1,7 +1,8 @@
+import os
 import discord
 import random
 from discord.ext import commands
-
+from boto.s3.connection import S3Connection
 
 client = commands.Bot(command_prefix = '.') #Aegirbot command prefix
 
@@ -142,4 +143,5 @@ async def on_message(message):
         await message.add_reaction(':at:699437200672292935')
 '''
 
-client.run(process.env.BOT_TOKEN)
+s3 = S3Connection(os.environ['BOT_TOKEN'])
+client.run(s3)
