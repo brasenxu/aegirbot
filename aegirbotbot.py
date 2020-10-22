@@ -30,8 +30,9 @@ async def ping(ctx):
 )
 async def pic(ctx, arg=None):
     samPic = []
-    brasenPic = []
-    minwooPic = []
+
+    hojinPic = ['https://imgur.com/QY3Mxr1']
+
     jeffersonPic = []
 
     aegirPic = ['https://imgur.com/F2UhyI4',
@@ -64,12 +65,15 @@ async def pic(ctx, arg=None):
                 'https://imgur.com/RDCEtV1',
                 'https://imgur.com/QEljUxX']
 
+    minwooPic = ['https://imgur.com/45UwZND']
+
     if not arg or arg == "aegir":
         await ctx.send(f'{random.choice(aegirPic)}'.format(ctx))
     else:
-        if arg == "sam":
-            await ctx.send(f'A Sam pic would be here usually...')
-
+        if arg == "minwoo":
+            await ctx.send(f'{random.choice(minwooPic)}'.format(ctx))
+        elif (arg == "hojin") or (arg == "david"):
+            await ctx.send(f'{random.choice(hojinPic)}'.format(ctx))
 
 #Aegir StopStopStop Comment
 @client.command(
