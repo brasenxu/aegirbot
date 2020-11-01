@@ -33,6 +33,29 @@ async def pic(ctx, arg=None):
 
     hojinPic = ['https://imgur.com/QY3Mxr1']
 
+    minwooPic = ['https://imgur.com/45UwZND',
+                 'https://imgur.com/a2COmdL',
+                 'https://imgur.com/dpYpgdL',
+                 'https://imgur.com/UvjA5nZ',
+                 'https://imgur.com/IOZHJL2',
+                 'https://imgur.com/13Ktw24',
+                 'https://imgur.com/4FVQ9CI',
+                 'https://imgur.com/LPeqdM2',
+                 'https://imgur.com/x4o7U3F',
+                 'https://imgur.com/c3YnKLY',
+                 'https://imgur.com/omqSthS',
+                 'https://imgur.com/iGfpxNI',
+                 'https://imgur.com/fjABLoD',
+                 'https://imgur.com/a265CZM',
+                 'https://imgur.com/f29x0XH',
+                 'https://imgur.com/aMbMgN5',
+                 'https://imgur.com/zRz7FpE',
+                 'https://imgur.com/dvJnJGl',
+                 'https://imgur.com/AgyF8n3',
+                 'https://imgur.com/eWd7pOH',
+                 'https://imgur.com/hhVNvgr',
+                 'https://imgur.com/jCO475U']
+
     jeffersonPic = []
 
     aegirPic = ['https://imgur.com/F2UhyI4',
@@ -64,8 +87,6 @@ async def pic(ctx, arg=None):
                 'https://imgur.com/jxboPQq',
                 'https://imgur.com/RDCEtV1',
                 'https://imgur.com/QEljUxX']
-
-    minwooPic = ['https://imgur.com/45UwZND']
 
     if not arg or arg == "aegir":
         await ctx.send(f'{random.choice(aegirPic)}'.format(ctx))
@@ -146,5 +167,5 @@ async def on_message(message):
     elif aegir3 in message.content:
         await message.add_reaction(':at:699437200672292935')
 '''
-
-client.run(os.getenv('BOT_TOKEN'))
+client.run('NzUyMTkxNTk2MjE2MzIwMTAw.X1UDAw.5uyb9r4uaq_JyEhYmyQnHPbgSyM')
+#client.run(os.getenv('BOT_TOKEN'))
