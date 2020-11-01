@@ -167,5 +167,5 @@ async def on_message(message):
     elif aegir3 in message.content:
         await message.add_reaction(':at:699437200672292935')
 '''
-client.run('NzUyMTkxNTk2MjE2MzIwMTAw.X1UDAw.5uyb9r4uaq_JyEhYmyQnHPbgSyM')
-#client.run(os.getenv('BOT_TOKEN'))
+
+client.run(os.getenv('BOT_TOKEN'))
