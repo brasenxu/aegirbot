@@ -120,12 +120,21 @@ async def hao(ctx):
     brief="Michael Kim"
 )
 async def michael(ctx):
-    michaelNum = random.randint(1,5)
+    michaelNum = random.randint(1,10)
     if michaelNum == 1:
-        await ctx.send(f'MY NAME IS MICHAEL KIM and I have a 20 minute queue timer!!')
-        await ctx.send(f'https://imgur.com/EtjpiK9')
+        await ctx.send(f'MY NAME IS MICHAEL and I have a 20 minute queue timer!!')
+        await ctx.send(f'https://imgur.com/rXVbqlk')
     else:
         await ctx.send(f'I can drink 203.9 cups of Mountain Dew Baja Blast.')
+
+
+#The Infinity command
+@client.command(
+    help="Infinity 0 2 1, pro gamer",
+    brief="Michael Kim is Bruce Wayne, and Infinity is the clown"
+)
+async def infinity(ctx):
+    await ctx.send(f'I spend 20 minutes before each game staring into the abyss')
 
 
 #Aegir Shut up Command
