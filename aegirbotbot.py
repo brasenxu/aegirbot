@@ -114,7 +114,21 @@ async def hao(ctx):
     await ctx.send(f'I will take \"Ur mom to the old town road\"')
 
 
-#Aegir Shut up Comment
+#Michael wanted a command
+@client.command(
+    help="It's just Michael, what else do you expect",
+    brief="Michael Kim"
+)
+async def michael(ctx):
+    michaelNum = random.randint(1,5)
+    if michaelNum == 1:
+        await ctx.send(f'MY NAME IS MICHAEL KIM and I have a 20 minute queue timer!!')
+        await ctx.send(f'https://imgur.com/EtjpiK9')
+    else:
+        await ctx.send(f'I can drink 203.9 cups of Mountain Dew Baja Blast.')
+
+
+#Aegir Shut up Command
 @client.command(
     help="Shut the fuck up.",
     brief="For when Aegir wants you to shut up."
