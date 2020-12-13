@@ -29,7 +29,36 @@ async def ping(ctx):
     brief="Sends back a pretty picture."
 )
 async def pic(ctx, arg=None):
-    samPic = []
+    samPic = ['https://imgur.com/SfqIuXn',
+              'https://imgur.com/QCDuI9m',
+              'https://imgur.com/K2MqPmQ',
+              'https://imgur.com/D66Pd7B',
+              'https://imgur.com/8j4MpeT',
+              'https://imgur.com/FBm3HFH',
+              'https://imgur.com/kcf4CNt',
+              'https://imgur.com/Kf0NK49',
+              'https://imgur.com/DYDD1yt',
+              'https://imgur.com/hbmIZbp',
+              'https://imgur.com/bkLb4vi',
+              'https://imgur.com/GNSeLJs',
+              'https://imgur.com/4CRsTJ2',
+              'https://imgur.com/zsxQOMa',
+              'https://imgur.com/mr9vWn7',
+              'https://imgur.com/RKcu9rp',
+              'https://imgur.com/bG7hPXQ',
+              'https://imgur.com/P6beGet',
+              'https://imgur.com/bfgzGev',
+              'https://imgur.com/EEq66AG',
+              'https://imgur.com/gIkqzPY',
+              'https://imgur.com/gdvejk1',
+              'https://imgur.com/ADyfs7l',
+              'https://imgur.com/4dxfHXL',
+              'https://imgur.com/mzt0iFb',
+              'https://imgur.com/FWhhboo',
+              'https://imgur.com/Ay9XXde',
+              'https://imgur.com/GabksxO',
+              'https://imgur.com/qUpbOdw',
+              'https://imgur.com/pPWRGuA']
 
     hojinPic = ['https://imgur.com/QY3Mxr1']
 
@@ -95,6 +124,8 @@ async def pic(ctx, arg=None):
             await ctx.send(f'{random.choice(minwooPic)}'.format(ctx))
         elif (arg == "hojin") or (arg == "david"):
             await ctx.send(f'{random.choice(hojinPic)}'.format(ctx))
+        elif (arg == "sam") or (arg == "samuel"):
+            await ctx.send(f'{random.choice(samPic)}'.format(ctx))
 
 #Aegir StopStopStop Comment
 @client.command(
