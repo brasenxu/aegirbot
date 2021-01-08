@@ -194,7 +194,7 @@ async def say(ctx, *, msg):
     brief="This is for when Hao gets overly weird."
 )
 async def weirdchamp(ctx):
-    await ctx.send(f'https://imgur.com/qK1PD1T')
+    await ctx.send(f'https://imgur.com/Q2CC9ys')
 
 
 #When you say aegir the bot does :at:
