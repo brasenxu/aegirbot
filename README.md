@@ -1,12 +1,6 @@
 # aegirbot
 aegir bot discord bot
 
-Warning: Some commands may have foul language (if scared, please direct yourself to the nearest tape dispenser)
-
-WARNING
-CONTAINS PICTURES OF AEGIR
-MEGA HOT
-MEGA HOT 
-
-
-ok
+This Discord bot was created using the (now-outdated) Discord.py 1.0 Python library. It is capable of returning pictures and texts in response to commands. 
+It is hosted via Heroku
+Because this bot was made to only be used in a particular Discord server with my friends, many of the functions may not work, or are confusing.
